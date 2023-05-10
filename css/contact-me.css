@@ -1,0 +1,78 @@
+main {
+    background-color: var(--grey);
+}
+
+.contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+.contact-details h1 {
+    text-align: center;
+}
+
+.contact-details .contact-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.contact-details .contact-section .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .symbol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    font-size: 2em;
+    border-radius: 50%;
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    margin-bottom: 10%;
+    cursor: pointer;
+}
+
+
+/* contact form section */
+
+.form-section-container {
+    display: flex;
+    padding: 2.5% 5% 5%;
+    position: relative;
+}
+
+.message-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0% 2.5%;
+    width: 50%;
+}
+
+.message-copy h2 {
+    font-size: 2em;
+    width: fit-content;
+    margin-bottom: 3%;
+}
+
+.form-container {
+    width: 50%;
+}
+
+.form-container form {
+    width: 80%;
+    box-shadow: none;
+    border: none;
+}

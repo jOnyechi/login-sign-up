@@ -1,0 +1,68 @@
+@media (max-width: 950px) {
+    .form-section-container {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        position: relative;
+    }
+    .message-copy {
+        align-items: center;
+        width: 100%;
+    }
+    .form-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact .symbol {
+        width: 2.5em;
+        height: 2.5em;
+        line-height: 2.5em;
+        font-size: 1.5em;
+        margin-bottom: 10%;
+    }
+    .form-container form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-details .contact-section {
+        margin-top: 10%;
+    }
+    .contact h3 {
+        font-size: .8em;
+    }
+    .form-section-container {
+        padding: 10% 5%;
+    }
+    .message-copy h2 {
+        font-size: 1.4em;
+    }
+    .form-container input,
+    .form-container textarea {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 375px) {
+    .contact .symbol {
+        width: 2em;
+        height: 2em;
+        line-height: 2em;
+        font-size: 1em;
+        margin-bottom: 15%;
+    }
+    .contact h3 {
+        font-size: .7em;
+    }
+    .form-container input,
+    .form-container textarea {
+        font-size: .6em;
+        padding: 0px 50px 0px 10px;
+    }
+}
+
+
+/*styling of logo container and logo image*/

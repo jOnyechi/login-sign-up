@@ -1,0 +1,73 @@
+@media (max-width: 950px) {
+    main .content {
+        flex-direction: column-reverse;
+    }
+    main .main-container .main-img-container {
+        height: fit-content;
+        width: 100%;
+        justify-content: center;
+    }
+    main .main-container .main-img-container .image {
+        width: 200px;
+        height: 200px;
+    }
+    main .main-container .main-img-container .image img {
+        width: 80%;
+        height: 80%;
+    }
+    .main-container .main-img-container .image .tech-icons {
+        font-size: 1em;
+        padding: 3%;
+    }
+    main .content .copy {
+        width: 80%;
+        align-items: center;
+        margin-top: 5%;
+    }
+    main .content .copy h1 {
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 2%;
+    }
+    main .content .copy h3 {
+        font-size: 1em;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    main .main-container .copy {
+        justify-content: center;
+    }
+    main .main-container .main-img-container .image {
+        width: 150px;
+        height: 150px;
+    }
+    main .content .copy h1 {
+        font-size: 1.5em;
+    }
+    main .content .copy h3 {
+        font-size: .75em;
+        margin: 3% 0%;
+    }
+}
+
+@media (max-width: 500px) {
+    main .content .copy h1 {
+        font-size: 1.2em;
+    }
+    main .content .copy h3 {
+        font-size: .6em;
+        margin: 3% 0%;
+    }
+}
+
+@media (max-width: 375px) {
+    main .content .copy {
+        width: 90%;
+    }
+    .buttons .cta {
+        font-size: .6em;
+    }
+}

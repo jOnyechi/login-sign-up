@@ -1,0 +1,126 @@
+@media (max-width: 950px) {
+    .container {
+        padding: 5%;
+    }
+    /*header logo styling in mobile version*/
+    header .logo .logo-container {
+        border: 2px solid var(--white);
+    }
+    header .logo .logo-container .color-fill {
+        background-color: var(--white);
+    }
+    header .logo .logo-container .color-fill p {
+        color: var(--dark-blue);
+    }
+    header .logo .logo-container .color-fill-reverse p {
+        color: var(--white);
+    }
+    /*overlay styling*/
+    .overlay {
+        position: fixed;
+        top: 60px;
+        left: 0px;
+        opacity: .8;
+        background-color: var(--dark-blue);
+        height: calc(100vh - 60px);
+        width: 100vw;
+        z-index: 100;
+        transition: ease .3s;
+    }
+    /* Text styling */
+    h1,
+    h2 {
+        font-size: 2em;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    h4 {
+        font-size: 1em;
+        font-weight: 600;
+    }
+    p {
+        font-size: 1em;
+        line-height: 1.5em;
+        text-align: justify;
+    }
+    /* title styling*/
+    .title {
+        width: 100%;
+    }
+    .title .cta {
+        margin: 2% auto;
+        padding: 2%;
+    }
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: .8em;
+        line-height: 1.5em;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 5% 5% 15%;
+    }
+    .logo {
+        width: 120px
+    }
+    header .logo .logo-container .color-fill p,
+    header .logo .logo-container .color-fill-reverse p {
+        font-size: .5em;
+    }
+    /* Text styling */
+    h1,
+    h2 {
+        font-size: 1.8em;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: 1em;
+        font-weight: 600;
+    }
+    h4 {
+        font-size: .8em;
+        font-weight: 600;
+    }
+    /* title styling*/
+    .title {
+        width: 100%;
+    }
+    .title .cta {
+        margin: 2% auto;
+        padding: 3%;
+        width: 150px;
+    }
+}
+
+@media (max-width: 375px) {
+    /* Text styling */
+    h1,
+    h2 {
+        font-size: 1.4em;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: .8em;
+        font-weight: 600;
+    }
+    h4 {
+        font-size: .8em;
+        font-weight: 600;
+    }
+    p {
+        font-size: .6em;
+        line-height: 1.5em;
+        text-align: justify;
+    }
+}
+
+
+/*styling of logo container and logo image*/

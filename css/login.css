@@ -1,0 +1,82 @@
+main .container {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    width: 100%;
+    height: 100%;
+}
+
+.form-container form {
+    box-shadow: none;
+    border: none;
+    border-radius: none;
+    text-align: center;
+}
+
+.form-container form h2 {
+    display: inline-block;
+    position: relative;
+}
+
+.form-container form h2::after {
+    height: 3px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    background-color: var(--dark-blue);
+}
+
+.form-container form input {
+    text-align: left;
+}
+
+.form-container form a {
+    display: inline-block;
+    margin: 5% auto;
+    cursor: pointer;
+}
+
+.form-container form .form-links {
+    display: flex;
+    justify-content: space-between;
+    color: var(--dark-blue);
+}
+
+.form-container.hide {
+    display: none;
+}
+
+.copy {
+    text-align: center;
+}
+
+.copy p {
+    text-align: center;
+}
+
+.error-msg {
+    color: var(--red);
+}
+
+.error-msg.hide {
+    display: none;
+}
+
+
+/* animations */
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,156 @@
+@media (max-width: 950px) {
+    /*styling of the main-content wrapper*/
+    main .main-content-container-wrapper {
+        width: 80%;
+    }
+    main .main-content-container-wrapper .main-content {
+        flex-direction: column;
+        width: 100%;
+    }
+    main .main-content-container-wrapper .main-content img {
+        height: 175px;
+        width: 175px;
+    }
+    main .main-content-container-wrapper .main-content .main-content-text {
+        text-align: center;
+        width: 100%;
+    }
+    main .main-content-container-wrapper .main-content .main-content-text p {
+        text-align: center;
+    }
+    main .main-content-container .social-media {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+    }
+    main .main-content-container .social-media .social-media-icons {
+        width: 60%;
+    }
+    main .main-content-container .social-media .social-media-icons img {
+        width: 40px;
+        height: 40px;
+    }
+    .social-mobile-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    /*about me section*/
+    .about-me-section {
+        flex-direction: column-reverse;
+    }
+    .about-me-section .about-me-text {
+        text-align: center;
+        width: 100%;
+        margin: 0% auto;
+    }
+    .about-me-section .about-me-text p,
+    .about-me-section .about-me-text .cta {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-me-section img {
+        width: 300px;
+        height: 300px;
+        margin: 0% auto;
+    }
+    /* service-section*/
+    .service-column {
+        width: 100%;
+        padding: 0 25px;
+    }
+    /*styling form*/
+    .form-container {
+        margin-bottom: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .social-mobile-wrapper .cta {
+        display: none;
+    }
+    main .main-content-container .social-media {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* service section */
+    /* form styling*/
+    .form-container {
+        margin: 5% auto;
+    }
+    .form-container form {
+        width: 90%;
+    }
+    .form-container form input,
+    .form-container form textarea {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-me-section .about-me-text .cta {
+        width: 150px;
+    }
+    /* service section */
+    .service-column .single-service .circle-before {
+        transform: translate(50%, -50%);
+    }
+    .service-column .single-service:hover .service-content .icon {
+        width: 3em;
+        height: 3em;
+        line-height: 3em;
+        font-size: 1.5em
+    }
+    /* main section social media icon container */
+    main .main-content-container .social-media .social-media-icons {
+        width: 80%;
+    }
+    .form-container form .rating-container div .star-container i.active-star {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 375px) {
+    main .main-content-container .social-media p {
+        font-size: .5em;
+        line-height: 1em;
+        font-weight: 600;
+    }
+    main .main-content-container .social-media .social-media-icons {
+        width: 100%;
+    }
+    /* service section*/
+    .service-column .single-service .service-content .icon {
+        width: 3em;
+        height: 3em;
+        line-height: 3em;
+        font-size: 1.5em;
+    }
+    .service-column .single-service:hover .service-content .icon {
+        width: 2em;
+        height: 2em;
+        line-height: 2em;
+        font-size: 1em
+    }
+    .project-container .project-content .project-card .project-card-content .project-card-image {
+        height: 100px;
+        width: 200px;
+        border-radius: 5px;
+        padding: 5px;
+        background-color: var(--grey);
+    }
+    .about-me-section img {
+        width: 250px;
+        height: 250px;
+        margin: 0% auto;
+    }
+    .form-container form input,
+    .form-container form textarea {
+        font-size: .6em;
+    }
+}
+
+
+/*styling of logo container and logo image*/

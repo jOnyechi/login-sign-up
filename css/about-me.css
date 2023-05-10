@@ -1,0 +1,162 @@
+/* Styling for the main section of the about me page */
+
+main .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80%;
+}
+
+main .main-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    border-radius: 50%;
+    padding: 5px;
+    width: 400px;
+    height: 400px;
+    background-color: var(--dark-blue);
+    z-index: -5;
+    opacity: .5
+}
+
+main .main-image img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: block;
+    box-shadow: 1px 10px 25px var(--dark-blue);
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+}
+
+main .main-text {
+    display: inline-block;
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(70%);
+}
+
+main .main-text h1 {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 3%;
+}
+
+main .main-text p {
+    font-weight: 500;
+    text-align: center;
+}
+
+
+/* Timeline section of styling*/
+
+.title h2 {
+    position: relative;
+}
+
+.title h2::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, var(--grey), var(--light-blue), var(--dark-blue));
+}
+
+.timeline-container {
+    margin: 5%;
+    width: 90%;
+    height: fit-content;
+    display: inline-block;
+    position: relative;
+}
+
+.timeline-container::after {
+    position: absolute;
+    content: "";
+    width: 3px;
+    top: 0;
+    right: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    background-image: linear-gradient(to bottom, var(--grey), var(--light-blue), var(--dark-blue));
+}
+
+.timeline-container ul {
+    width: 100%;
+}
+
+.timeline-container ul li {
+    position: relative;
+    width: 50%;
+    height: auto;
+    padding: 3%;
+    box-shadow: 1px 1px 25px var(--grey);
+    margin-bottom: 5%;
+    z-index: 50;
+}
+
+.timeline-container ul li p {
+    font-size: 1em;
+    line-height: normal;
+    margin: 5% 0%;
+}
+
+.timeline-container ul li:nth-child(odd) {
+    position: relative;
+    text-align: right;
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+}
+
+.timeline-container ul li:nth-child(even) {
+    position: relative;
+    text-align: left;
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+}
+
+.timeline-container ul li .circle {
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+}
+
+.timeline-container ul li .circle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--light-blue);
+    transform: translate(-50%, -50%);
+}
+
+.timeline-container ul li:nth-child(odd) .circle {
+    right: 0;
+    transform: translate(42.5px, -100%);
+}
+
+.timeline-container ul li:nth-child(even) .circle {
+    left: 0;
+    transform: translate(-48.25px, -100%);
+}
+
+.timeline-container ul li .date {
+    color: var(--light-blue);
+}
